@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Prueba técnica frontend
+Prueba técnica para candidatos al cargo de Frontend React Developer.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Objetivo
+Realizar la maquetación en ReactJS proporcionando la funcionalidad de filtros del siguiente prototipo
 
-## Available Scripts
+[Ver prototipo](https://www.figma.com/proto/iAtVRRkGIwqbbz2LGApCtY/Frontend-Test?node-id=73%3A303&viewport=-555%2C2051%2C1.1058835983276367&scaling=scale-down "Prototipo")
 
-In the project directory, you can run:
+[Ver archivo de diseño](https://www.figma.com/file/iAtVRRkGIwqbbz2LGApCtY/Frontend-Test?node-id=0%3A1 "Archivo de diseño")
 
-### `npm start`
+### Funcionamiento de filtros
+Tener en cuenta los siguientes requerimientos para realizar la funcionalidad de los filtros:
+* Al hacer clic en el botón de filtrar se despliega un modal con las opciones para filtrar.
+* Se pueden seleccionar varias opciones.
+* Al seleccionar una opción se activa el botón de limpiar (inicialmente inactivo) y se muestra el número de opciones seleccionadas en el botón de filtrado.
+* Al hace clic en el botón de filtrar se cierra el modal y se muestran los productos que cumplen con los filtros seleccionados.
+* Al hacer clic en el botón de limpiar se remueven las opciones seleccionados del formulario de filtros y se carga el listado con todas las opciones.
+* El filtro consiste de tres opciones: ```Rubia (id=1)```, ```Morena (id=2)``` y ```Roja (id=3)```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Requisitos técnicos
+* Usar SCSS para crear los estilos.
+* Si se recarga la página y se tenía filtros aplicados, éstos deben conservarse.
+* Para la construcción del listado de los productos utilizar el archivo ```products.json``` que se encuentra en este repositorio.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Responsive
+Aunque este prototipo está diseñado para mobile, la versión desktop debe ser responsive. Así, en pantallas desktop el grid de productos puede cambiar a 4 columnas.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Recursos
+* En la carpeta ```img``` dentro del folder ```public``` se encuentran las imágenes de los productos.
+* En la carpeta ```svg``` dentro del folder ```public``` se encuentran los íconos.
